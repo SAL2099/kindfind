@@ -242,7 +242,7 @@ header
   top: 0px;
   left: 0px;
   right: 0px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.15)!important;
 }
 
 .background-header .logo,
@@ -260,7 +260,8 @@ header
 }
 
 .header-area {
-  position: absolute;
+  position: fixed;
+  background-color: #FFF;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -298,13 +299,15 @@ header
   margin-left: 33%;
   margin-right: 0px;
   background-color: #fff;
-  padding: 0px 20px;
+  border-radius: 10px;
+  padding: 10px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
   z-index: 999;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.15)!important;
 }
 
 .header-area .main-nav .nav li {
@@ -745,6 +748,10 @@ welcome
   }
 }
 
+#values-home {
+  text-align: center;
+}
+
 /*
 ---------------------------------------------
 about
@@ -1053,6 +1060,12 @@ footer .right-content {
 
 .contact-form ::placeholder {
   color: #7a7a7a;
+}
+
+#interest-form-heading {
+  color: #C25A68;
+  text-align: center;
+  padding: 20px;
 }
 
 .footer-content .right-content {
