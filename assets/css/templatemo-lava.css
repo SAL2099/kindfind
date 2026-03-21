@@ -96,6 +96,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0px;
 }
 
+h2 { 
+  color: #305837;
+}
+
 ul {
   margin-bottom: 0px;
 }
@@ -271,6 +275,8 @@ header
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1)!important;
+
 }
 
 .header-area .main-nav {
@@ -606,7 +612,7 @@ header
     padding: 0px !important;
     border: none !important;
     background: #f7f7f7 !important;
-    color: #191a20 !important;
+    color: #305837 !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
@@ -750,6 +756,8 @@ welcome
 
 #values-home {
   text-align: center;
+  color: #fff;
+  padding-bottom: 20px;
 }
 
 /*
