@@ -756,7 +756,7 @@ welcome
 
 #values-home {
   text-align: center;
-  color: #fff;
+  color: #305837;
   padding-bottom: 20px;
 }
 
@@ -1005,7 +1005,7 @@ footer
 footer {
   margin-top: 200px;
   padding-top: 120px;
-  background-image: url(../images/footer-bg.png);
+  /* background-image: url(../images/footer-bg.png); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1158,7 +1158,7 @@ footer .sub-footer {
 }
 
 footer .sub-footer a {
-	color: #FFF;
+	color: #305837;
 }
 
 footer .sub-footer a:hover {
@@ -1166,7 +1166,7 @@ footer .sub-footer a:hover {
 }
 
 footer .sub-footer p {
-  color: #fff;
+  color: #305837;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.5px;
