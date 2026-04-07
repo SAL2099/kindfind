@@ -115,10 +115,12 @@ p {
   font-size: 24px;
   color: #C25A68;
   margin-top: 20px;
+  text-align: center;
 }
 
 .bold-heading {
   font-weight: 600;
+  text-align: center;
 }
 
 /* 
@@ -671,6 +673,7 @@ header
 
 .header-columns-left {
     margin-top: 100px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -680,6 +683,11 @@ header
     align-items: center;
 }
 
+@media (max-width: 992px ){
+  .page-title {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
 
 
 /* make two columns when screen is wider than 992px */
@@ -750,13 +758,15 @@ welcome
   background-position: right top;
 }
 
-@media (max-width: 992px) {
-  #about-heading {
-    background-color: #fff;
-    align-items: center;
-    padding: 20px;
-  }
+.welcome-area-contact {
+  width: 100%;
+  height: 100vh;
+  min-height: 793px;
+  background-image: url(../images/banner-bg2.png);
+  background-repeat: no-repeat;
+  background-position: left top;
 }
+
 
 
 
@@ -853,6 +863,10 @@ welcome
   align-self: center;
 }
 
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
 /*
 ---------------------------------------------
 about
@@ -871,20 +885,27 @@ about
   }
 }
 
+#features-container {
+  display: table;
+}
+
 .features-item {
   border-radius: 5px;
-  height:600px;
   padding: 60px 30px;
   text-align: center;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+  display: table-cell;
+  margin: 40px;
 }
+
+
 
 .features-item h2 {
   z-index: 9;
   position: absolute;
   top: 15px;
   left: 45px;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   color: #f0bac9db;
 }
@@ -898,7 +919,7 @@ about
 
 .features-item h4 {
   margin-top: 0px;
-  font-size: 22px;
+  font-size: 30px;
   color: #C25A68;
   margin-bottom: 25px;
   font-weight: bold;
@@ -907,9 +928,6 @@ about
 .features-item .main-button {
   margin-top: 35px;
   display: inline-block;
-}
-
-#polaroids {
 }
 
 
@@ -1090,9 +1108,6 @@ footer
     padding-top: 0px!important;
     margin-top: 0px!important;
   }
-  .contact-form {
-    margin-bottom: 45px;
-  }
   footer .right-content {
     text-align: center;
   }
@@ -1119,9 +1134,15 @@ footer .footer-content {
   position: relative;
   z-index: 10;
   padding: 45px;
+  margin: 50px;
   border-radius: 5px;
   background-color: #86a77f6f;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#form-text {
+  margin-top:50px; 
+  text-align: center;
 }
 
 footer .right-content {
