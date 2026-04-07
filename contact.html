@@ -118,8 +118,8 @@ https://templatemo.com/tm-540-lava-landing-page
 
     <div class="container">
 
-        <div class="contact-form">
-                                <form method="POST" action="https://script.google.com/macros/s/AKfycbyY-tddZt12x1N2w3Bfdlll0ggIRHXmHf4bwVYbFrDgCQg-KHcNWGbpHg6rM3AW5Ag/exec">
+        <div class="contact-form" id="contact-form">
+                                <form method="POST" action="https://script.google.com/macros/s/AKfycbw5J8oSMNBE7QCja1GOoaZlgQCowxYu_Rgc0RoB6dnFnWUT5p9MxDW94LPkmCC9vkkVHw/exec">
                                     <div class="row">
 
                                         <div class="col-md-6 col-sm-12">
@@ -139,7 +139,7 @@ https://templatemo.com/tm-540-lava-landing-page
 
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <textarea name="message" rows="6" id="message" placeholder="Your message" required="" style="background-color: #fff;"></textarea>
+                                            <textarea name="Message" rows="6" id="message" placeholder="Your message" required="" style="background-color: #fff;"></textarea>
                                         </fieldset>
                                     </div>
                                         
@@ -192,6 +192,39 @@ https://templatemo.com/tm-540-lava-landing-page
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+
+
+
+<!-- <script>
+  const form = document.getElementById('contact-form')
+  const responseMessage = document.getElementById('response-message')
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault() // Prevents the default form submission (page reload)
+    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw5J8oSMNBE7QCja1GOoaZlgQCowxYu_Rgc0RoB6dnFnWUT5p9MxDW94LPkmCC9vkkVHw/exec' // PASTE YOUR SCRIPT URL HERE
+    const formData = new FormData(form)
+    
+    responseMessage.textContent = 'Submitting...'
+
+    fetch(scriptURL, { method: 'POST', body: formData})
+      .then(response => response.json())
+      .then(data => {
+        if (data.result === 'success') {
+          responseMessage.style.color = 'green'
+          responseMessage.textContent = 'Thank you! Your message has been sent.'
+          form.reset() // Clear the form fields
+        } else {
+          throw new Error('Form submission failed')
+        }
+      })
+      .catch(error => {
+        console.error('Error!', error.message),
+        responseMessage.style.color = 'red'
+        responseMessage.textContent = 'Oops! Something went wrong. Please try again.'
+      })
+  })
+</script> -->
 
 </body>
 </html>
