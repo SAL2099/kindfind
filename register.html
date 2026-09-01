@@ -18,8 +18,6 @@ https://templatemo.com/tm-540-lava-landing-page
 
 -->
 
-<!-- Version 31.08.2026 -->
-
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -51,14 +49,19 @@ https://templatemo.com/tm-540-lava-landing-page
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo"> <img src="assets/images/kindfind text.png"> </a>
+                        <a href="index.html" class="logo">
+                            <a href="index.html" class="logo"> <img src="assets/images/kindfind text.png"> </a>
+
+                        </a>
                         <!-- ***** Logo End ***** -->
 
                         <ul class="nav">
-                            <li> <a href="index.html" class="menu-item active"> Home </a></li>
+                            <li> <a href="index.html"> Home </a></li>
                             <li> <a href="about.html"> About </a></li>
-                            <li> <a href="register.html"> Register </a></li>
+                            <li> <a href="register.html" class="menu-item active"> Register </a></li>
                             <li> <a href="contact.html"> Contact Us </a></li>
+
+
                         </ul>
 
 
@@ -78,72 +81,74 @@ https://templatemo.com/tm-540-lava-landing-page
     <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
 
+        <div class="welcome-area-about">
+
         <!-- ***** Header Text Start ***** -->
         <!-- <div class="header-text">
             <div class="container">
                 <div class="row"> -->
-        <div class="header-columns-left">
-                    <div data-scroll-reveal="enter left move 30px over 0.6s after 0.5s">
-                        <img style="max-width: 100%;" src="assets/images/kindfind_logo.png">                         
-                    </div>
+        <div class="header-columns-left"> 
+            <div data-scroll-reveal="enter left move 30px over 0.6s after 1s">
+
+                <div class="page-title"> 
+                    <img style="max-width: 100%;" src="assets/images/About.png">
+                </div>
+                        
+            </div>
+
+                
 
         </div>
 
-         <div class="header-columns-right">
-                    <div data-scroll-reveal="enter left move 30px over 0.6s after 1s">
-                        <h2 class="bold-heading">Your new app for shopping sustainable fashion locally. </h2> 
-                        <p class="pink-subtext"> Browse cool new items found in charity shops near you. </p>                      
-                    </div>
-
-        </div>
-
-
-
+         
 
         </div>
     </div>
-        <!-- ***** Header Text End ***** -->
-    </div>
-    <!-- ***** Welcome Area End ***** -->
-     <div>
-
-     </div>
+    <!-- ***** Welcome Area End ***** --> 
 
     <!-- ***** Features Big Item Start ***** -->
 
-    <div class="container">
-        <h2> Why use KindFind? <br></h2>
-        <p><br>Don't have time to order clothes online? Is rummaging through charity shops too time-consuming? Looking for a sustainable way to find clothes efficiently?</p>
-        <p><br><b>KindFind</b> gives shopping second-hand the convenience of fast fashion, while keeping the positive environmental impact. </p>
-        <p><br>Simply browse items available in charity shops near you to see what's in store before you visit.</p>
-
+    <div class="container" id="form-text">
+        <div id="form-text">
+            <h2>Register Your Shop</h2>
+            <p class="pink-subtext"><br><br> Calling all charity shops! Interested in selling clothes on KindFind?<br> </p>
+            <p class="pink-subtext"> Register your shop today. </p>
+        </div>
     </div>
 
-    <div id="polaroids">
-        <img src="assets/images/polaroids.png" style="max-width: 100%;">
-    </div>
-    
-    <!-- ***** Features Big Item End ***** -->
-
-
     <div class="container">
-        <h4 id="interest-form-heading"> Register interest for KindFind today! <br> </h4>
 
-                            <div class="contact-form">
-                                <form method="POST" action="https://script.google.com/macros/s/AKfycbyY-tddZt12x1N2w3Bfdlll0ggIRHXmHf4bwVYbFrDgCQg-KHcNWGbpHg6rM3AW5Ag/exec">
+        <div class="contact-form" id="contact-form">
+                                <form method="POST" action="https://script.google.com/macros/s/AKfycbyXQaA_SifjUtz6uoZOyGDpa318eZhP_8DxjkUNTLW156d3ExoIPFVWvo7TlQm0_J4/exec">
                                     <div class="row">
+
+                                        <div class="col-md-6 col-sm-12">
+                                            <fieldset>
+                                                <input name="Name" type="text" placeholder="Shop Name" required="" 
+                                                style="background-color: #fff;">
+                                            </fieldset>
+                                        </div>
+
+
                                         <div class="col-md-6 col-sm-12">
                                             <fieldset>
                                                 <input name="Email" type="email" placeholder="Email" required=""
                                                     style="background-color: #fff;">
                                             </fieldset>
                                         </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <fieldset>
-                                                <input name="Name" type="text" placeholder="Name" required="" 
-                                                style="background-color: #fff;">
-                                            </fieldset>
-                                        </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <textarea name="Address" rows="6" id="message" placeholder="Shop Address" required="" style="background-color: #fff;"></textarea>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <textarea name="Message" rows="6" id="message" placeholder="Your message" required="" style="background-color: #fff;"></textarea>
+                                        </fieldset>
+                                    </div>
+                                        
                                         <div class="col-lg-12">
                                             <fieldset>
                                                 <button type="submit" class="main-button">Send</button>
@@ -152,22 +157,23 @@ https://templatemo.com/tm-540-lava-landing-page
                                     </div>
                                 </form>
                             </div>
+           
+           
+           
+                     </div>
     </div>
+    
+    <!-- ***** Features Big Item End ***** -->
 
     <!-- ***** Footer Start ***** -->
     <footer id="contact-us">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-12">
+                    <h4 id="values-home">Community  &#9829  Affordability  &#9829  Sustainability</h4> 
 
                     <div class="sub-footer">
-
-                        <h5 id="values-home"> Community  &#9829  Affordability  &#9829  Sustainability</h5> 
-
-                        <a href="https://onedrive.live.com/:w:/g/personal/33eacf926e19a447/IQA8ZObnkgBQTL473j0QpaLQAdEvwq_gTi9cY4ucf8OOCig?rtime=iplRik6a3kg&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy8zM2VhY2Y5MjZlMTlhNDQ3L0lRQThaT2Jua2dCUVRMNDczajBRcGFMUUFkRXZ3cV9nVGk5Y1k0dWNmOE9PQ2lnP2U9bGVRVEhJ"> <u>Privacy Policy </u> <br> </a>
-                        
-                        <p> <br> Copyright &copy; 2020 Lava Landing Page
+                        <p>Copyright &copy; 2020 Lava Landing Page
 
                         | Designed by <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
                     </div>

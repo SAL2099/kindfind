@@ -136,12 +136,12 @@ body {
 }
 
 ::selection {
-  background: #f1556a;
+  background: #f0bac9db;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #f1556a;
+  background: #f0bac9db;
   color: #fff;
 }
 
@@ -177,7 +177,7 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #f1556a;
+  background-color: #f0bac9db;
 }
 
 a.main-button {
@@ -237,7 +237,7 @@ button.main-button:hover {
 
 .center-heading h2 em {
   font-style: normal;
-  color: #f4813f;
+  color: #C25A68;
 }
 
 .center-heading p {
